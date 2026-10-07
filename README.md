@@ -39,10 +39,9 @@ Grab the latest `ScreenBrightnessAdjuster.exe` from the [Releases](../../release
 
 ## 🖼️ 截图 / Screenshots
 
-<!-- TODO: 把截图放到 docs/ 目录后取消注释
-![中文界面](docs/screenshot-zh.png)
-![English UI](docs/screenshot-en.png)
--->
+| 压暗 8% | 压暗 50% |
+|---|---|
+| ![8% dimming](docs/panel-8.png) | ![50% dimming](docs/panel-50.png) |
 
 ## 🛠️ 工作原理 / How it works
 

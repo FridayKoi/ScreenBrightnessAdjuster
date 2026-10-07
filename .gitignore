@@ -12,3 +12,4 @@ UpgradeLog*.htm
 # Rider / VS Code
 .idea/
 .vscode/
+Backup/

@@ -1,0 +1,22 @@
+<Application x:Class="ScreenBrightnessAdjuster.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:tb="clr-namespace:Hardcodet.Wpf.TaskbarNotification;assembly=Hardcodet.NotifyIcon.Wpf"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <tb:TaskbarIcon x:Key="TrayIcon"
+                        IconSource="/Assets/tray.png"
+                        ToolTipText="屏幕调暗器"
+                        TrayLeftMouseUp="TrayIcon_TrayLeftMouseUp">
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Tag="OpenPanel" Header="调节面板" FontWeight="Bold" Click="ShowPanel_Click" />
+                    <MenuItem x:Name="MenuEnableDim" Tag="EnableDim" Header="启用压暗" IsCheckable="True" Click="MenuEnableDim_Click" />
+                    <MenuItem x:Name="MenuScreens" Tag="Screens" Header="选择屏幕" />
+                    <Separator />
+                    <MenuItem Tag="Exit" Header="退出" Click="Exit_Click" />
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
+        </tb:TaskbarIcon>
+    </Application.Resources>
+</Application>
